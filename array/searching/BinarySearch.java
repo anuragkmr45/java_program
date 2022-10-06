@@ -38,5 +38,26 @@ public class BinarySearch {
         return false;
     }
 
+    static int BSearchPresentRec(int[] array, int target) {
+        return helperBSearchPresentRec(array, target, 0, array.length);
+    }
+
+    static int helperBSearchPresentRec(int[] array, int target, int start, int end) {
+        int mid  = (start + end) / 2;
+
+        if (array[mid] > target) {
+            return helperBSearchPresentRec(array, target, start, mid - 1);
+        } else if (array[mid] < target) {
+            return helperBSearchPresentRec(array, target, mid + 1, end);
+        } else {
+            return mid;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,6,7,8};
+        System.out.println(BSearchPresentRec(arr, 9));
+    }
 
 }
