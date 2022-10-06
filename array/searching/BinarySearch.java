@@ -1,37 +1,37 @@
 package array.searching;
 
 public class BinarySearch {
-    
+
     static int BSearchIndex(int[] array, int target) {
         int start = 0;
-        int end  = array.length - 1;
+        int end = array.length - 1;
 
-        while(start <= end) {
-            int mid  = (start + end ) / 2;
+        while (start <= end) {
+            int mid = (start + end) / 2;
 
             if (target > array[mid]) {
                 start = mid + 1;
             } else if (target < array[mid]) {
                 end = mid - 1;
-            }else {
+            } else {
                 return mid;
             }
         }
         return -1;
     }
-    
+
     static boolean BSearchPresent(int[] array, int target) {
         int start = 0;
-        int end  = array.length - 1;
+        int end = array.length - 1;
 
-        while(start <= end) {
-            int mid  = (start + end ) / 2;
+        while (start <= end) {
+            int mid = (start + end) / 2;
 
             if (target > array[mid]) {
                 start = mid + 1;
             } else if (target < array[mid]) {
                 end = mid - 1;
-            }else {
+            } else {
                 return true;
             }
         }
@@ -43,7 +43,7 @@ public class BinarySearch {
     }
 
     static int helperBSearchPresentRec(int[] array, int target, int start, int end) {
-        int mid  = (start + end) / 2;
+        int mid = (start + end) / 2;
 
         if (array[mid] > target) {
             return helperBSearchPresentRec(array, target, start, mid - 1);
@@ -52,11 +52,10 @@ public class BinarySearch {
         } else {
             return mid;
         }
-
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,8};
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
         System.out.println(BSearchPresentRec(arr, 9));
     }
 
