@@ -53,10 +53,6 @@ public class BinarySearch {
             return mid;
         }
     }
-
-    public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
-        System.out.println(BSearchPresentRec(arr, 9));
-    }
+    
 
 }
