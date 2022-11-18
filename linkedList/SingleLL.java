@@ -84,4 +84,16 @@ public class SingleLL {
 
         System.out.println("null");
     }
+
+    // size of linkedlist
+    public void size() {
+        Node currNode = head;
+
+        int count = 0;
+        while (currNode.next != null) {
+            count = count + 1;
+        }
+
+        System.out.println("Size of linkedlist => " + count);
+    }
 }
