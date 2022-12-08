@@ -1,3 +1,3 @@
 # JAVA PROGRAMS 
 
-Basic java alogo and programs 
+Basic java concepts ,alogo and programs 
