@@ -1,4 +1,4 @@
-1. Class - Template for an object
+1. <h3>Class</h3> - Template for an object
 Object - an instance of a class
 
 A class creates a new data type that can be used to create objects
