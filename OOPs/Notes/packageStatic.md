@@ -13,3 +13,4 @@ and without reference to any object. <br>You can declare both methods and variab
 The most common example of a static member is main( ).
 It is declared as static because it must be called before any objects exist.<br>
 Static method in Java is a method which belongs to the class and not to the object.
+ 
