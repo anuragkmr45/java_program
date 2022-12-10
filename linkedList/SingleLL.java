@@ -18,6 +18,11 @@ public class SingleLL {
     public void addFirst(int data) {
         Node newNode = new Node(data);
 
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        
         newNode.next = null;
         head = newNode;
     }
