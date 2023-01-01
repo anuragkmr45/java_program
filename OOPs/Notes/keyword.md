@@ -28,4 +28,4 @@ Note - In Java, all class objects must be dynamically allocated.
 Car mycar = new Car(); // declair and allocate by using constructer
 ```
 - A constructor defines what occurs when an object of a class is created.
-- Java’s primitive types are not implemented as objects so that we do not use "new" keyword in 'chr' or 'int' etc
+- Java’s primitive types are not implemented as objects so that we do not use "new" keyword in 'chr' or 'int' etc.,
