@@ -1,4 +1,4 @@
-package recursion.recursion1;
+package recursion;
 
 public class SumDigit {
     static int sum(int num) {
