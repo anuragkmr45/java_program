@@ -1,4 +1,6 @@
 // 1480. Running Sum of 1d Array
+
+package Questions.Easy;
 class Solution {
     public int[] runningSum(int[] nums) {
         int[] arr = new int[nums.length];
