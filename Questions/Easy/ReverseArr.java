@@ -9,7 +9,7 @@
 // Input :  arr[] = {4, 5, 1, 2}
 // Output : arr[] = {2, 1, 5, 4}
 
-package array.GenOperation;
+package Questions.Easy;
 
 public class ReverseArr {
     static int[] reverse(int[] arr) {

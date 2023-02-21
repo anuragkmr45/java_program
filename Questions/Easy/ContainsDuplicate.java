@@ -10,6 +10,7 @@
 // Input: nums = [1,2,3,4]
 // Output: false
 
+package Questions.Easy;
 
 import java.util.Arrays;
 import java.util.HashMap;

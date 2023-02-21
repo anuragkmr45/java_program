@@ -1,4 +1,6 @@
 // Build Array from Permutation
+package Questions.Easy;
+
 class BuildArrPermutation {
     public int[] buildArray(int[] nums) {
         int[] newarr = new int[nums.length];

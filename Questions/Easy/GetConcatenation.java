@@ -1,4 +1,7 @@
 // 1929. Concatenation of Array
+
+package Questions.Easy;
+
 class GetConcatenation {
     public int[] getConcatenation(int[] nums) {
         int[] arr = new int[2 * nums.length];

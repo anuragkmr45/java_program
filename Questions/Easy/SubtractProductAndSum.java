@@ -1,4 +1,7 @@
 // Subtract the Product and Sum of Digits of an Integer
+
+package Questions.Easy;
+
 class SubtractProductAndSum {
     public int subtractProductAndSum(int n) {
         int a = product(n);

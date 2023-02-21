@@ -12,7 +12,7 @@
 // Output:  Minimum element is: 3
 //               Maximum element is: 35
 
-package array.GenOperation;
+package Questions.Easy;
 
 public class MaxMin {
     class Result {

@@ -6,7 +6,7 @@
 // Output: 6
 // Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
-package LeetCode.Medium;
+package Questions.Medium;
 
 public class MaxSubArr {
     static int maxArr(int[] arr) {
