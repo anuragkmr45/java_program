@@ -6,13 +6,14 @@ public class ReverseStr {
             return str;
         }
 
-        String newStr = str.substring(1, str.length()) + str.charAt(0);
+        char curr = str.charAt(0);
+        String newStr = reverse(str.substring(1));
 
-        return reverse(newStr);
+        return newStr + curr;
     }
 
     public static void main(String[] args) {
-        String str = "abcd";
+        String str = "ABCD";
         System.out.println(reverse(str));
     }
 }
