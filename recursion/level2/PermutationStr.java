@@ -4,14 +4,18 @@
 
 package recursion.level2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PermutationStr {
     
     // returning ans in repeatetd string causes more space complexity
-    static void allPermutation(String str) {
+    static void allPermutationStr(String str) {
         String ansStr = new String();
-        helper(str, ansStr);
+        helperStr(str, ansStr);
     }
-    static void helper(String str, String ans) {
+
+    static void helperStr(String str, String ans) {
 
         if (str.length() == 0) {
             System.out.println(ans);
@@ -20,16 +24,42 @@ public class PermutationStr {
 
         for (int i = 0; i < str.length(); i++) {
             char elemet = str.charAt(i);
-
             String newStr = str.substring(0, i) + str.substring(i + 1);
 
-            helper(newStr, ans + elemet);
+            helperStr(newStr, ans + elemet);
         }
     }
     
+    // getting element in the form of ArrayList 
+    static List<String> allPermutationLis(String str) {
+        String res = new String();
+
+        return helperLs(str, res);
+    }
+
+    static List<String> helperLs(String orgStr, String resStr) {
+        if (orgStr.isEmpty()) {
+            List<String> list = new ArrayList<>();
+            list.add(resStr);
+            return list;
+        }
+
+        List<String> ans = new ArrayList<>();
+
+        for (int i = 0; i < orgStr.length(); i++) {
+            char element = orgStr.charAt(i);
+            String newStr = orgStr.substring(0, i) + orgStr.substring(i + 1);
+
+            ans.addAll(helperLs(newStr, resStr + element));
+        }
+        return ans;
+    }
+
+
     public static void main(String[] args) {
         String str = "abc";
-        allPermutation(str);
+        // allPermutationStr(str);
+        System.out.println(allPermutationLis(str));
     }
 
 }
