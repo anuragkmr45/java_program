@@ -55,11 +55,27 @@ public class PermutationStr {
         return ans;
     }
 
+    // count no of permutation 
+    // using basic maths aranging(permutation) n length of stirng into n positions = P(n, n) = n! / (n - n)! = n!
+
+    static int countPermutation(String str){
+        return helperCountPermutation(str, 0);
+    }
+
+    static int helperCountPermutation(String str, int index) {
+        if (str.length() == 0) {
+            return 1;
+        }
+
+        int count = str.length();
+        return count * helperCountPermutation(str.substring(index + 1), index + 1);
+    }
 
     public static void main(String[] args) {
         String str = "abc";
         // allPermutationStr(str);
-        System.out.println(allPermutationLis(str));
+        // System.out.println(allPermutationLis(str));
+        System.out.println(countPermutation(str));
     }
 
 }
