@@ -7,7 +7,7 @@ package recursion.level2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PermutationStr {
+public class Permutation {
     
     // returning ans in repeatetd string causes more space complexity
     static void allPermutationStr(String str) {
