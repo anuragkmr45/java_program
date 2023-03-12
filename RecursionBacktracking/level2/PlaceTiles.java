@@ -1,7 +1,7 @@
 // Tiling Problem
 // Given a 'n * m' floor and several "1 * m" tiles we have to put them in floor and find the no of ways we can fill the floor 
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class PlaceTiles {
     static int countTiles(int row, int col) {

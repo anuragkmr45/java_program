@@ -1,4 +1,4 @@
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class FriendsPair {
     static int noOfWays(int n) {

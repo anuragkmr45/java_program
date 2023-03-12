@@ -6,7 +6,7 @@
 // Time Complexity: O(2n)
 // Space Space: O(n)
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class TowerOfHanoi {
     static void toh(int n, String src, String helper, String dest) {

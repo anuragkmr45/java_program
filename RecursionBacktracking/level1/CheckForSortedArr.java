@@ -1,4 +1,4 @@
-package recursion.level1;
+package RecursionBacktracking.level1;
 
 public class CheckForSortedArr {
     static boolean isSorted(int[] array) {

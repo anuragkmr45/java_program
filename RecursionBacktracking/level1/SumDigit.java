@@ -1,4 +1,4 @@
-package recursion.level1;
+package RecursionBacktracking.level1;
 
 public class SumDigit {
     static int sum(int num) {

@@ -1,4 +1,4 @@
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class SkipStr {
     static String skip(String orgStr, String remStr) {

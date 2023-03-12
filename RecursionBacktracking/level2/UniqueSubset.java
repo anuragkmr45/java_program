@@ -2,7 +2,7 @@
 // eg "abc" has subset "aaa, aa, a"
 // so we use Hashset
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 import java.util.HashSet;
 

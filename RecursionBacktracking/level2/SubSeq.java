@@ -1,7 +1,7 @@
 // print all subsequence of the given string 
 // give all subsets of the string 
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 import java.util.ArrayList;
 

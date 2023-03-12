@@ -1,4 +1,4 @@
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class FirstNLastOccur {
     static int first = -1;

@@ -1,6 +1,6 @@
 // Count number of ways to reach destination in a Maze(matrix)
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 public class CountPathMaze {
     static int initialCountPAth(int row, int col) {

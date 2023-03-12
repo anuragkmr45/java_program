@@ -2,7 +2,7 @@
 // eg str = "abc"
 // ans = abc, acb, bac, bca, cab, cba
 
-package recursion.level2;
+package RecursionBacktracking.level2;
 
 import java.util.ArrayList;
 import java.util.List;
