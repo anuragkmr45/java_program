@@ -44,7 +44,7 @@ public class DoubleLL {
         }
 
         newNode.prev = tempNode;
-        tempNode.next = newNode;
+        // tempNode.next = newNode;
     }
 
     // delete from first
