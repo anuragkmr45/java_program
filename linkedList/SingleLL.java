@@ -110,4 +110,28 @@ public class SingleLL {
 
         System.out.println("Size of linkedlist => " + count);
     }
+
+    // reverse a LinkedList
+    public void reverse() {
+        if (head.next == null) {
+            System.out.println("only one node present");
+        }
+
+        if (head == null) {
+            System.out.println("LL is empty");
+        }
+
+        Node prevNode = head;
+        Node currNode = head.next;
+
+        while (currNode.next != null) {
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+
+        head.next = null;
+        head = prevNode;
+    }
 }
