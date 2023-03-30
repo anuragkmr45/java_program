@@ -2,6 +2,13 @@ package linkedList;
 
 public class SingleLL {
 
+    public static void main(String[] args) {
+        SingleLL data = new SingleLL();
+        data.add(10);
+
+        data.display();
+    }
+
     Node head;
 
     public class Node{
@@ -27,8 +34,8 @@ public class SingleLL {
         head = newNode;
     }
 
-    // add data at last
-    public void addLast(int data) {
+    // add data at last (default adding)
+    public void add(int data) {
         Node newNode = new Node(data);
 
         if (head == null) {
@@ -82,8 +89,10 @@ public class SingleLL {
 
         Node currNode = head;
 
+        System.out.print(currNode.data + " --> ");
+
         while (currNode.next != null) {
-            System.out.print(currNode + " --> ");
+            System.out.print(currNode.data + " --> ");
             currNode = currNode.next;
         }
 
