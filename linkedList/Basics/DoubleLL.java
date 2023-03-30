@@ -1,4 +1,4 @@
-package linkedList;
+package linkedList.Basics;
 
 public class DoubleLL {
     Node head;
