@@ -1,3 +1,5 @@
+package array.sorting;
+
 public class CombSort{
 
 	int nextGap(int gap){
