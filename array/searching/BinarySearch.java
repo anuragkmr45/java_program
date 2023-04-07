@@ -1,11 +1,8 @@
 package array.searching;
-
 public class BinarySearch {
-
     static int BSearchIndex(int[] array, int target) {
         int start = 0;
         int end = array.length - 1;
-
         while (start <= end) {
             int mid = (start + end) / 2;
 
@@ -26,7 +23,6 @@ public class BinarySearch {
 
         while (start <= end) {
             int mid = (start + end) / 2;
-
             if (target > array[mid]) {
                 start = mid + 1;
             } else if (target < array[mid]) {
@@ -35,9 +31,10 @@ public class BinarySearch {
                 return true;
             }
         }
+
         return false;
     }
-
+    
     static int BSearchPresentRec(int[] array, int target) {
         return helperBSearchPresentRec(array, target, 0, array.length);
     }
@@ -53,6 +50,9 @@ public class BinarySearch {
             return mid;
         }
     }
-    
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        System.out.println(BSearchIndex(arr, 7));
+    }
 
 }
