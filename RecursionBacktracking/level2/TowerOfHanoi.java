@@ -20,4 +20,8 @@ public class TowerOfHanoi {
 
         toh(n - 1, dest, src, dest);
     }
+
+    public static void main(String[] args) {
+        toh(5, "src", "helper", "dest");
+    }
 }
