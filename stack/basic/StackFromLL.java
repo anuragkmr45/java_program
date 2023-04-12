@@ -1,5 +1,7 @@
 package stack.basic;
 
+import linkedList.Basics.SingleLL;
+
 public class StackFromLL {
     Node head;
     public class Node {
@@ -54,5 +56,19 @@ public class StackFromLL {
             count = count + 1;
         }
         System.out.println("Size of linkedlist => " + count);
+    }
+
+    public static void main(String[] args) {
+        SingleLL list = new SingleLL();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+
+        list.display();
+
+        list.deleteLast(0);
+
+        list.display();
     }
 }
