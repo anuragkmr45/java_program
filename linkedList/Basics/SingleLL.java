@@ -4,6 +4,13 @@ public class SingleLL {
     public static void main(String[] args) {
         SingleLL data = new SingleLL();
         data.add(10);
+        data.add(20);
+
+        System.out.println("After adding 2 datas :");
+        data.display();
+        
+        data.deleteLast(0);
+        System.out.println("After deleting 1 datas :");
         data.display();
     }
     Node head;
