@@ -65,9 +65,13 @@ public class StackFromLL {
         list.add(30);
         list.add(40);
 
+        System.out.println("After adding 4 datas : ");
+
         list.display();
 
         list.deleteLast(0);
+
+        System.out.println("After deleting 1 data");
 
         list.display();
     }
