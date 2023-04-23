@@ -1,5 +1,8 @@
 package tree.BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Traversal {
     public static void preOrderTravers(Node root) {
         if (root == null) {
@@ -34,16 +37,47 @@ public class Traversal {
         System.out.print(root.data + " ");
     }
 
+    public static void levelOrderTravers(Node root) {
+        if (root == null) {
+            System.out.println("Empty tree");
+            return;
+        }
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        queue.add(null);
+
+        while (!queue.isEmpty()) {
+            Node currElemet = queue.remove();
+
+            if (currElemet == null) {
+                System.out.println();
+
+                if (queue.isEmpty()) {
+                    break;
+                } else {
+                    queue.add(null);
+                }
+            } else {
+                System.out.print(currElemet.data + " ");
+
+                if (currElemet.left != null) {
+                    queue.add(currElemet.left);
+                }
+
+                if (currElemet.right != null) {
+                    queue.add(currElemet.left);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int[] nodes = { 9, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
 
         CreateBT tree = new CreateBT();
         Node root = tree.createTreeFromArr(nodes);
 
-        preOrderTravers(root);
-        System.out.println();
-        inOrderTravers(root);
-        System.out.println();
-        postOrderTravers(root);
+        levelOrderTravers(root);
     }
 }
