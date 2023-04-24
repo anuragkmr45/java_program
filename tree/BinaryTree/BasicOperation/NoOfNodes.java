@@ -1,15 +1,16 @@
-package tree.BinaryTree;
+package tree.BinaryTree.BasicOperation;
 
-public class SumAllNode {
-    public static int sumOfNodes(Node root) {
+public class NoOfNodes {
+    public static int countOfNodes(Node root) {
+
         if (root == null) {
             return 0;
         }
 
-        int left = sumOfNodes(root.left);
-        int right = sumOfNodes(root.right);
+        int left = countOfNodes(root.left);
+        int right = countOfNodes(root.right);
 
-        return left + right + root.data;
+        return left + right + 1;
     }
 
     public static void main(String[] args) {
@@ -18,6 +19,6 @@ public class SumAllNode {
         CreateBT tree = new CreateBT();
         Node root = tree.createTreeFromArr(nodes);
 
-        System.out.println(sumOfNodes(root));
+        System.out.println(countOfNodes(root));
     }
 }

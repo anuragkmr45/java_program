@@ -1,4 +1,4 @@
-package tree.BinaryTree;
+package tree.BinaryTree.BasicOperation;
 
 public class HeightOfTree {
     public static int height(Node root) {
