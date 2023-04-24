@@ -10,7 +10,7 @@ public class NoOfNodes {
         int left = countOfNodes(root.left);
         int right = countOfNodes(root.right);
 
-        return left + right;
+        return left + right + 1;
     }
 
     public static void main(String[] args) {
