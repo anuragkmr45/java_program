@@ -13,7 +13,7 @@ public class QuickSort {
             return;
         }
 
-        int pivot = partiation(array, low, heigh - 1);
+        int pivot = partiation(array, low, heigh);
 
         helperQSort(array, 0, pivot - 1);
         helperQSort(array, pivot + 1, heigh);
@@ -46,7 +46,7 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr = { 9, 8, 7, 6, 11, 5, 4, 3, 2 };
 
-        helperQSort(arr, 0, arr.length - 1);
+        quickSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
