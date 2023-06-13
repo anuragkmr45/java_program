@@ -18,7 +18,7 @@ public class BFS {
         adjacencyList[source].add(destination);
     }
 
-    public void BFS(int startVertex) {
+    public void BFSFun(int startVertex) {
         boolean[] visited = new boolean[vertices];
         LinkedList<Integer> queue = new LinkedList<>();
 
@@ -50,6 +50,6 @@ public class BFS {
         graph.addEdge(2, 5);
 
         System.out.println("BFS traversal starting from vertex 0:");
-        graph.BFS(0);
+        graph.BFSFun(0);
     }
 }
