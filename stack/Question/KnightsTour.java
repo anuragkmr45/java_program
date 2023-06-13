@@ -1,3 +1,5 @@
+// Given a chessboard of size N x N, and an initial position (startX, startY) of a knight, find a sequence of moves that allows the knight to visit every square on the chessboard exactly once, following the rules of knight movement. 
+
 package stack.Question;
 
 public class KnightsTour {

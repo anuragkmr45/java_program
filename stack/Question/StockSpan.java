@@ -1,6 +1,6 @@
-package stack.Question;
-
 // The stock span problem is a financial problem where we have a series of n daily price quotes for a stock. We need to calculate the span of stock's price for all n days. The span of the stock's price on a given day i is defined as the maximum number of consecutive days (including the current day) on which the price of the stock is less than or equal to the price on day i.
+
+package stack.Question;
 
 import java.util.Stack;
 

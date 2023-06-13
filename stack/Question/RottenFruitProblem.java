@@ -1,3 +1,10 @@
+// You are given a grid representing a farm where fruits are placed. Each cell in the grid can contain either of the following values:
+
+// 0: Represents an empty cell.
+// 1: Represents a cell with a fresh fruit.
+// 2: Represents a cell with a rotten fruit.
+// Rotten fruits infect fresh fruits that are adjacent to them in all four directions (up, down, left, and right). A minute is needed for the infection to spread from one cell to its adjacent cells.
+
 package stack.Question;
 
 import java.util.*;
