@@ -1,3 +1,5 @@
+// You are given an array of integers. Your task is to find the product of the K smallest elements in the array.
+
 package heap.Question;
 
 import java.util.Arrays;
