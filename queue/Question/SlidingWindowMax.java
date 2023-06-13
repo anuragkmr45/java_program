@@ -1,3 +1,5 @@
+// Given an array of integers nums and an integer k, return an array containing the maximum element in each sliding window of size k.
+
 package queue.Question;
 
 import java.util.ArrayDeque;

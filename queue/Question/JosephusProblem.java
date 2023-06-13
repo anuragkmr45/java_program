@@ -1,3 +1,5 @@
+// There are N people standing in a circle waiting to be executed. Starting from a given person, you count K people in a clockwise direction and remove that person from the circle. The process is repeated with the remaining people, again counting K people in a clockwise direction and removing the selected person. This continues until only one person remains, and that person is declared the "survivor".
+
 package queue.Question;
 
 class Node {
