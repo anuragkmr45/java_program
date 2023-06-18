@@ -26,7 +26,7 @@ public class QueueFromStack {
 
     public int dequeue() {
         if (stack1.isEmpty()) {
-            System.out.println("Queue is empty");
+            System.out.println("Empty Queue");
             return -1;
         }
 
@@ -35,7 +35,7 @@ public class QueueFromStack {
 
     public int poll() {
         if (stack1.isEmpty()) {
-            System.out.println("Empty queue");
+            System.out.println("Empty Queue");
             return -1;
         }
         return stack1.peek();
