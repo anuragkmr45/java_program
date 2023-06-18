@@ -12,6 +12,7 @@ public class StackFromLL {
             this.next = null;
         }
     }
+
     // push element in stack
     public void push(int data) {
         Node newNode = new Node(data);
@@ -22,6 +23,7 @@ public class StackFromLL {
         newNode.next = null;
         head = newNode;
     }
+
     // pop element in stack
     public void pop(int data) {
         Node lastNode = head.next;
@@ -36,6 +38,7 @@ public class StackFromLL {
         }
         seclastNode.next = null;
     }
+
     // display stack
     public void display() {
         if (head == null) {
@@ -48,6 +51,7 @@ public class StackFromLL {
         }
         System.out.println("null");
     }
+    
     // size of stack
     public void size() {
         Node currNode = head;
